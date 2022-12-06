@@ -3,10 +3,14 @@
 
 /* 숨김 콘텐츠 */
 .a11y-hidden {
-  background-color: yellow;
+  /* background-color: red; */
   /* visibility: hidden; */
   position: absolute;
-  top: -10000px
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 /* 기본 스타일 */
@@ -79,8 +83,21 @@ body {
   padding-right: 0;
 } */
 
-.divider {
+/* .divider {
   margin-right: 4px;
+} */
+
+/* 메인메뉴 */
+.menu {
+  background-color: orangered;
+  background: #e85e2c
+    linear-gradient(
+      to bottom,
+      #ef9126 0%,
+      #e85e2c 35%,
+      #e85e2c 70%,
+      #ef9126 100%
+    );
 }
 
 /* 비주얼 */
