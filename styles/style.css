@@ -101,6 +101,11 @@ body {
   padding-left: 110px;
   /* border-top 합해서 45+2 (박스) */
   height: 47px;
+  position: relative;
+}
+
+.menu > li:nth-child(-n+3) {
+  position: relative;
 }
 
 .menu-button {
@@ -129,23 +134,34 @@ body {
   margin-left: 130px;
 }
 
-.menu li {
-  float: left;
-}
-
 .menu-item {
-  border-left: 2px solid #fff;
   float: left;
+  border-left: 2px solid #fff;
 }
 
 .sub-menu {
   background-color: pink;
   position: absolute;
+  top: 47px;
   display: none;
+}
+
+.menu-html, .menu-css, .menu-standards {
+  left: 0;
+}
+
+.menu-accessibility, .menu-qna, .menu-archive  {
+  right: 0;
 }
 
 .is-active .sub-menu {
   display: block;
+  white-space: nowrap;
+}
+
+.sub-menu li {
+  display: inline-block;
+  background-color: gold;
 }
 
 /* 비주얼 */
