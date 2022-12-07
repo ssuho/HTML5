@@ -114,8 +114,23 @@ body {
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 
+.is-active .menu-button {
+  color: #ff0;
+}
+
+.is-active .menu-button::after {
+  content: "";
+  border-top: 2px solid #222;
+  background-color: #222;
+  display: block;
+}
+
 .menu-item:first-child {
   margin-left: 130px;
+}
+
+.menu li {
+  float: left;
 }
 
 .menu-item {
@@ -127,6 +142,10 @@ body {
   background-color: pink;
   position: absolute;
   display: none;
+}
+
+.is-active .sub-menu {
+  display: block;
 }
 
 /* 비주얼 */
