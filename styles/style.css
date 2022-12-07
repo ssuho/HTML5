@@ -94,7 +94,7 @@ body {
 
 /* 메인메뉴 */
 .navigation {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .menu {
   border-top: 2px solid currentColor;
@@ -142,9 +142,9 @@ body {
 }
 
 .sub-menu {
-  background-color: pink;
   position: absolute;
   top: 47px;
+  padding: 4px 0;
   display: none;
 }
 
@@ -163,7 +163,11 @@ body {
 
 .sub-menu li {
   display: inline-block;
-  background-color: gold;
+}
+
+.sub-menu a {
+  display: inline-block;
+  padding: 6px 0;
 }
 
 .sub-menu a::before {
@@ -198,6 +202,10 @@ body {
   margin-left: .2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.sub-menu a:hover, .sub-menu a:focus {
+  color: #f00;
 }
 
 /* 비주얼 */
