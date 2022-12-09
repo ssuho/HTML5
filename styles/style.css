@@ -334,13 +334,13 @@ fieldset {
   position: relative;
 }
 
-.user-email {
-  /* background-color: skyblue; */
+/* .user-email {
+  background-color: skyblue;
 }
 
 .user-pw {
-  /* background-color: lime; */
-}
+  background-color: lime;
+} */
 
 .login-form label {
   display: inline-block;
@@ -375,13 +375,20 @@ fieldset {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
   display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 10px 10px 10px 10px;
+  padding: 4px 10px;
   font-size: 12px;
 }
 
-.sign li a:first-child::before {
-  content: '\e803';
+.sign a{
+  display: block;
+  padding: 6px 0;
+}
+
+.sign a:first-child::before {
+  content: '\e804';
   font-family: 'fontello';
   font-weight: normal;
   display: inline-block;
