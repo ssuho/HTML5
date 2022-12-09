@@ -3,7 +3,7 @@
 @import url(./fonts.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   /* background-color: red; */
   /* visibility: hidden; */
   position: absolute;
@@ -278,19 +278,22 @@ body {
 
 /* 메인 */
 .main {
-  background-color: lightgreen;
-  height: 50vh;
+  background-color: #fff;
+  min-height: 450px;
   display: flow-root;
-  padding: 0 15px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
 }
 .group {
   margin: 0 15px;
 }
 .group1 {
-  background-color: violet;
+  /* background-color: violet; */
   width: 250px;
+  height: 100%;
   float: left;
 }
+
 .group2 {
   background-color: salmon;
   width: 380px;
@@ -302,11 +305,105 @@ body {
   float: left;
 }
 
+/* 로그인 영역 */
+.login {
+  box-shadow: 5px 5px 0 0 #aaa;
+  width: 250px;
+  background: #ed552f radial-gradient(circle at right top, #e8852e, #ed552f);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.login-title {
+  color: yellow;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+  margin: 10px 0 0 ;
+}
+
+fieldset {
+  border-bottom: 1px solid #aaa;
+  padding-bottom:5px;
+  position: relative;
+}
+
+.user-email {
+  /* background-color: skyblue; */
+}
+
+.user-pw {
+  /* background-color: lime; */
+}
+
+.login-form label {
+  display: inline-block;
+  margin: 0 0 8px;
+  width: 55px;
+  /* background-color: salmon; */
+}
+
+.login-form input {
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 2px 2px 2px 6px;
+}
+
+.login-button {
+  width: 50px;
+  height: 50px;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 2px;
+  border: 0;
+  padding: 0;
+  background-color: #ed552f;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.login .sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  font-size: 12px;
+}
+
+.sign li a:first-child::before {
+  content: '\e803';
+  font-family: 'fontello';
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ed552f;
+}
+
 /* 슬로건 */
 .slogan {
   background-color: skyblue;
   height: 10vh;
 }
+
 /* 푸터 */
 .footer {
   background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
