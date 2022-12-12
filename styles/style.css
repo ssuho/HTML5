@@ -432,6 +432,65 @@ fieldset {
   vertical-align: middle;
 } */
 
+
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #6D6D6D;
+  border-radius: 5px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  font-size: ;
+  font-weight: ;
+  display: flow-root;
+}
+
+.term-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list {
+  margin-top: 10px;
+}
+
+.term-list div {
+  margin-top: 15px;
+  display: flow-root;
+}
+
+.term-list-subject {
+  float: right;
+  width: 145px;
+  color: #296897;
+  font-weight: 500;
+}
+
+.term-list-thumbnail {
+  float: left;
+}
+
+.term-list-thumbnail img {
+  vertical-align: middle;
+}
+
+.term-list-brief {
+  float: right;
+  margin-top: 5px;
+  width: 145px;
+  line-height: 1.5;
+}
+
+.odd .term-list-subject,
+.odd .term-list-brief {
+  float: left;
+}
+
+.odd .term-list-thumbnail {
+  float: right;
+}
+
+
 /* 슬로건 */
 .slogan {
   background-color: skyblue;
