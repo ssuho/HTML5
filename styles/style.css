@@ -405,6 +405,33 @@ fieldset {
   color: #ed552f;
 }
 
+/* 유효성 검사 배너 */
+.validation-list {
+  /* background-color: yellow; */
+  margin-top :25px;
+}
+
+.validation-list li {
+  margin-top: 10px;
+}
+
+.validation-list li a {
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%, linear-gradient(to bottom, #ccc, #eee);
+  display: block;
+  padding: 10px 10px 10px 45px;
+}
+
+.validation-list li a:hover, .validation-list li a:focus {
+  color: red;
+}
+
+/* .validation-list li a::before {
+  content: url('./images/validation_icon.png');
+  vertical-align: middle;
+} */
+
 /* 슬로건 */
 .slogan {
   background-color: skyblue;
