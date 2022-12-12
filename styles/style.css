@@ -1,6 +1,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./fonts.css);
+@import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend {
@@ -295,7 +296,7 @@ body {
 }
 
 .group2 {
-  background-color: salmon;
+  /* background-color: salmon; */
   width: 380px;
   float: left;
 }
@@ -328,7 +329,7 @@ body {
   margin: 10px 0 0 ;
 }
 
-fieldset {
+.login fieldset {
   border-bottom: 1px solid #aaa;
   padding-bottom:5px;
   position: relative;
@@ -488,6 +489,54 @@ fieldset {
 
 .odd .term-list-thumbnail {
   float: right;
+}
+
+
+/* group 2 검색 폼 */
+.search-form {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px 25px;
+}
+
+.search-form-inner {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form-group {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.form-group-label {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.form-group-input {
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  flex-grow: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.search-button {
+  color: #FFF;
+  background-color: #000;
+  padding: 0 12px;
+  border-radius: 4px;
+  height: 24px;
+  white-space: nowrap;
+  padding: 0 10px;
+  font-size: 1.3rem;
 }
 
 
