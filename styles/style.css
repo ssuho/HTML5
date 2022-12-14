@@ -690,7 +690,7 @@ body {
 }
 
 .event-button-wrapper {
-  background-color: yellow;
+  /* background-color: yellow; */
   height: 18px;
   overflow: hidden;
   position: absolute;
